@@ -1,0 +1,32 @@
+{
+    "name": "tarsius-messaging-sms-zenziva",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bluebird": "^3.1.1",
+        "libxmljs": "^0.16.1",
+        "request-promise": "^1.0.2"
+    },
+    "tarsius": {
+        "type" : "messaging.sms",
+        "name" : "zenziva sms gateway",
+        "configs" : [
+            {
+                "name" : "userkey",
+                "title" : "username akun zenziva",
+                "type" : "string"
+            },
+            {
+                "name" : "passkey",
+                "title" : "password key",
+                "type" : "password"
+            }
+        ]
+    }
+}
