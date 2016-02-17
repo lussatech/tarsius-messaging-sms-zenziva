@@ -1,32 +1,46 @@
 {
-    "name": "tarsius-messaging-sms-zenziva",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "bluebird": "^3.1.1",
-        "libxmljs": "^0.16.1",
-        "request-promise": "^1.0.2"
-    },
-    "tarsius": {
-        "type" : "messaging.sms",
-        "name" : "zenziva sms gateway",
-        "configs" : [
-            {
-                "name" : "userkey",
-                "title" : "username akun zenziva",
-                "type" : "string"
-            },
-            {
-                "name" : "passkey",
-                "title" : "password key",
-                "type" : "password"
-            }
-        ]
-    }
+  "name": "tarsius-messaging-sms-zenziva",
+  "version": "0.0.1",
+  "description": "tarsius plugin for send sms using zenziva service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "muhammad hasan <hasan@lussa.net>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "libxmljs": "^0.16.1",
+    "request-promise": "^1.0.2"
+  },
+  "tarsius": {
+    "type": "messaging.sms",
+    "name": "zenziva sms gateway",
+    "configs": [
+      {
+        "name": "userkey",
+        "title": "username akun zenziva",
+        "type": "string"
+      },
+      {
+        "name": "passkey",
+        "title": "password key",
+        "type": "password"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lussatech/tarsius-messaging-sms-zenziva.git"
+  },
+  "keywords": [
+    "tarsius",
+    "nodejs",
+    "sms",
+    "zenziva"
+  ],
+  "bugs": {
+    "url": "https://github.com/lussatech/tarsius-messaging-sms-zenziva/issues"
+  },
+  "homepage": "https://github.com/lussatech/tarsius-messaging-sms-zenziva#readme"
 }
